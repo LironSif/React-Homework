@@ -1,17 +1,4 @@
-import { useState } from 'react'
-import './App.css'
-import ToDo from './todo/ToDo'
-import List from './list/List'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <main className='app'>
-      <h1>this is the component code use here :</h1>
-      <div className='code'>
-      <pre><code>
-          {`import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../list/list.css";
 
 const List = () => {
@@ -69,11 +56,11 @@ const List = () => {
 
   return (
     <main className="list">
-      <h1>TODOS</h1>;
-      <h3>Local Storge CRUD app</h3>;
-      <h4>CURD - Create Read Update Delete</h4>;
+      <h1>TODO`S</h1>
+      <h3>Local Storge CRUD app</h3>
+      <h4>CURD - Create Read Update Delete</h4>
       <p>
-        Add todos
+        Add todo`s
         <input type="text" ref={inputRef} placeholder="Add to list" />
         <button onClick={() => HandleClick()}>Add</button>
       </p>
@@ -87,7 +74,7 @@ const List = () => {
             onClick={()=>toggleDone(index)}
             key={index}
             className="tasks">
-      
+           {`${marker === 'f'?'X':'v'} - ${task}`}
            </div>
               <button onClick={(e)=>HandleRemove(e,index)}>X</button>
             </div>
@@ -98,15 +85,6 @@ const List = () => {
     </main>
   );
 };
-  
-`}
-        </code></pre>
-        </div>
-      <List/>
-    </main>
-  )
-}
 
-export default App
-
+export default List;
 

@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   background-color: #fb8500;
 }
@@ -29,4 +29,13 @@ s
 .page {
   width: 100%;
   min-height: 100vh;
+}
+
+.code {
+  max-height: 400px; 
+  overflow-y: auto;
+  background-color: #f4f4f4; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+  white-space: pre-wrap; 
 }

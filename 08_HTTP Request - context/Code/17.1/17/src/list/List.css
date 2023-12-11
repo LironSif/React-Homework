@@ -1,0 +1,64 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.list p {
+   display: flex;
+   justify-content: space-between;
+   width: auto;
+   gap: 10px;
+   font-weight: bold;
+}
+
+.tasks {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 200px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.tasks button{
+    background-color: red;
+    color: aliceblue;
+    z-index: 100;
+    border-radius: 50%;
+}
+.taskDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.taskDiv button{
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 2vw;
+    height: 2vh;
+
+}
+
+p button{
+    background-color: green;
+    color: aliceblue;
+    border-radius: 20%;
+    width: 3vw;
+    height: 2vh;
+}
