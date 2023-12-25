@@ -1,0 +1,16 @@
+.box {
+    background-color: blue;
+    position: relative;
+    animation: slideIn 1s ease-out forwards;
+    margin-top: 10px;
+  }
+  
+  .box-small { width: 33px; height: 30px; }
+  .box-medium { width: 50px; height: 50px; }
+  .box-large { width: 200px; height: 200px; }
+  
+  @keyframes slideIn {
+    from { left: -100px; }
+    to { left: 10px; }
+  }
+  
